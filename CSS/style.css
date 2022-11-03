@@ -155,3 +155,126 @@ h3 { font-size: 1.5rem; }
     .services {
     flex: 60%;
     }
+
+    /* Flex box table */
+
+
+    .my-work {
+  
+        text-align: center;
+        font-size: 5rem;
+    
+       }
+      
+    
+       .products {
+        flex: 4;
+        background-color: #fff;
+        padding: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+      
+      /* Added rotation, box-shadow, border-radius */
+      .card {
+      
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 50px;
+        padding: 10px;
+        flex: 0 0 300px;
+        transform: rotate(8deg);
+        box-shadow: 10px 10px 5px #aaaaaa;
+        margin: 20px;
+        
+      }
+      
+      /* Added border-radius to match the card */
+      .card header {
+        border-radius: 50px 50px 0px 0px;
+        padding: 20px;
+        
+      }
+      
+      .card p {
+        text-align: center;
+        
+      }
+      
+      /* make image round */
+      .card img {
+        border-radius: 100%;
+        width: 100%;
+        
+      }
+      
+      ul.no-bullets {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+    
+    /* Cards are split into two columns at 992px or smaller */
+    @media screen and (max-width: 992px) {
+        .card {
+          width: 50%;
+        }
+        /* Change the header color */
+        header {
+          background: #14cc64;
+        }
+      }
+      
+
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    /* Change the header color */
+    header, .section__subtitle--intro,
+    .section__subtitle--about  {
+      background: #ffb78a;
+    }
+  }
+  /* make CARD GLOW TRANSITION */
+  .card:hover,
+  .card:hover .card header {
+    box-shadow: inset 0px 0px 8px rgb(16, 219, 226), 0 0 15px rgb(243, 12, 251);
+  }
+
+  
+
+  .card {
+    height: 300px; 
+    overflow: hidden; 
+  }
+  
+  /* Transition property for smooth transformation of images */
+  .card:hover,
+  .card:hover .card header {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .card img:hover,
+  .card:focus .card img{
+    transform: scale(1.28);
+  }
+
+
+
+  /* footer */
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background:  #16c5ff;
+    
+    margin-top: auto;
+  }
+
