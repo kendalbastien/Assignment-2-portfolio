@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/* General styles */
+
+body {
+    background: #fff;
+    color: #303030;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: 6rem; }
+h2 { font-size: 3.75rem; }
+h3 { font-size: 1.5rem; }
+
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: 300;
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+/* This affects the size of the font in the blue intro accent */
+.section__subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background:  #16c5ff;
+    padding: .25em 1em;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1em;
+}
+
+
+
+/* header */
+
+.nav {
+   
+    overflow: hidden;
+    background-color:  white
+  }
+  
+  /* Navbar links */
+  .nav a {
+    float: right;
+    display: block;
+    color: #333;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .nav a:hover {
+    background-color: white;
+    color: red;
+  }
+  
+
+/*  Intro section  */
+
+.intro {
+    position: relative;
+}
+
+/* box shadow around profile picture */
+.intro__img {
+    box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.section__subtitle--intro {
+    display: inline-block;
+}
+
+/* Container to put Three elements of intro together */
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .intro__img {
+        grid-area: img;
+        min-width: 300px;
+        position: relative;
+        z-index: 2;
+        
+        border-radius: 50%;
+    }    
+    
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+}
