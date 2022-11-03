@@ -132,3 +132,26 @@ h3 { font-size: 1.5rem; }
         width: calc(100% + 1.5em);
     }
 }
+
+
+.my-services  {
+    flex-wrap: wrap;
+
+    background-color: #303030;
+    background-image: url(../img/services-bg.jpg);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: #fff;
+    text-align: center;
+}
+/* Flex box table */
+.services {
+     display: flex;
+     padding-top: 5.8rem;
+     padding-bottom: 25rem;
+     gap: 50px;
+    }
+    
+    .services {
+    flex: 60%;
+    }
