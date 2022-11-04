@@ -22,7 +22,7 @@ No installation is required
 ## Credits
 
 This program was created by:
-Glenroy Bastien
+Glenroy K. Bastien
 
 ## License
 
@@ -34,4 +34,4 @@ Link: https://github.com/kendalbastien/Assignment-2-portfolio/blob/main/img/Scre
 
 ## Links
 
-Life Application: https://kendalbastien.github.io/Assignment-2-portfolio/
+Live Application: https://kendalbastien.github.io/Assignment-2-portfolio/
