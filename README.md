@@ -30,6 +30,8 @@ Please refer to the LICENSE in the repo.
 
 ## Screenshots
 
+Link: https://github.com/kendalbastien/Assignment-2-portfolio/blob/main/img/Screenshot.jpg
+
 ## Links
 
-Life Application: xxxxx
+Life Application: https://kendalbastien.github.io/Assignment-2-portfolio/
